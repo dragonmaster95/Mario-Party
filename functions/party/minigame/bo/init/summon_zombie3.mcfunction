@@ -1,0 +1,1 @@
+summon minecraft:zombie 147 66 531 {CustomName:"BO_Pin",Tags:["Pin"],NoAI:1b}
