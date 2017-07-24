@@ -1,0 +1,72 @@
+Code Documentation:
+==================
+
+Comments:
+-----------------
+
+Every file should contain the following comment at the very top:
+
+#
+#	<filename>.mcc
+#	author: [Author]
+#
+#	description:
+#	[Short description of what the code in the file does]
+#
+#	instructions:
+# 	[If it needs instructions on how to use it, put those here. Optional.]
+#
+
+
+Everything should be commented and explained. comments belong in front of the code they describe.
+Try to be as detailed as possible while not stating the obvious.
+
+Example:
+
+	# Comment explaining the following command(s)
+	kill @a[name=Panossa]
+
+
+Indents:
+---------------
+
+Use indents as you see fit to group logical elements.
+
+Example:
+
+# part 1
+	/command 1
+	# comment
+	/command 2
+
+# part 2
+	/command 3
+
+
+
+Case Convention:
+================
+
+camelCase 		for everything code-related, like scoreboard objectives, tags and variables
+snake_case		for filenames
+
+
+Tabs:
+================
+
+tab = 4 spaces
+
+
+Naming Conventions:
+====================
+
+All variables as well as scoreboard objectives and tags should have reasonable names that reflect their use in some way, following the case conventions.
+Make sure to add the prefix to minigame specific things.
+
+
+Filenames:
+=================
+
+every minigame has it's own initials which are also the name for the subfolder in /minigame/.
+please use a main.mcfunction as the master function of your minigame, that controlls everything about it and is the only thing needed to be called from the main game function.
+	functions/party/minigame/<MINIGAME_INITIALS>/main.mcfunction
