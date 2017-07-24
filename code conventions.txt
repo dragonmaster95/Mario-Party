@@ -35,12 +35,12 @@ Use indents as you see fit to group logical elements.
 Example:
 
 # part 1
-	/command 1
+	command 1
 	# comment
-	/command 2
+	command 2
 
 # part 2
-	/command 3
+	command 3
 
 
 
@@ -67,6 +67,7 @@ Make sure to add the prefix to minigame specific things.
 Filenames:
 =================
 
-every minigame has it's own initials which are also the name for the subfolder in /minigame/.
-please use a main.mcfunction as the master function of your minigame, that controlls everything about it and is the only thing needed to be called from the main game function.
+Every minigame has it's own initials which are also the name for the subfolder in /minigame/.
+Please use a "main.mcfunction" as the master function of your minigame, that controlls everything about it.
+Also add a "start.mcfunction" which initialises the minigame (sets scores etc) and sets the main function as the gameloopfunction. 
 	functions/party/minigame/<MINIGAME_INITIALS>/main.mcfunction
