@@ -1,5 +1,5 @@
 #Settings
-scoreboard players tag @s[tag=dice_hit] remove dice_hit
+scoreboard players tag @s[tag=diceHit] remove diceHit
 
 #Movement and Title
 execute @s[score_move_min=1,tag=moving] ~ ~ ~ title @a title ["",{"score":{"name":"@p[score_move_min=1]","objective":"move"},"color":"dark_purple","bold":true}]
@@ -16,10 +16,10 @@ execute @s[score_move_min=1,tag=moving] ~ ~ ~ detect ~ 3 ~ birch_stairs * telepo
 execute @s[score_move_min=1,tag=moving] ~ ~ ~ detect ~ 3 ~ hardened_clay function party:board/board_event
 
 #Remove 1 score if on gold_block ONCE
-execute @s[score_move_min=1] ~ ~ ~ detect ~ 0 ~ gold_block * scoreboard players tag @s add gold_block
-execute @s[score_move_min=1] ~ ~ ~ detect ~ 0 ~ air * scoreboard players tag @s[tag=gold_block] remove gold_block
-execute @s[tag=gold_block] ~ ~ ~ function party:board/remove_move unless @s[tag=done]
-scoreboard players tag @s[tag=!gold_block] remove done
+execute @s[score_move_min=1] ~ ~ ~ detect ~ 0 ~ gold_block * scoreboard players tag @s add goldBlock
+execute @s[score_move_min=1] ~ ~ ~ detect ~ 0 ~ air * scoreboard players tag @s[tag=gold_block] remove goldBlock
+execute @s[tag=goldBlock] ~ ~ ~ function party:board/remove_move unless @s[tag=done]
+scoreboard players tag @s[tag=!goldBlock] remove done
 
 #End Movement
-scoreboard players set @s[score_move_min=0,score_move=0] turn_phase 3
+scoreboard players set @s[score_move_min=0,score_move=0] turnPhase 3

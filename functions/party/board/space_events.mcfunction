@@ -1,4 +1,4 @@
-execute @s ~ ~ ~ function party:board/center_player unless @s[tag=shulker_summoned]
+execute @s ~ ~ ~ function party:board/center_player unless @s[tag=shulkerSummoned]
 execute @s ~ ~ ~ detect ~ ~ ~ carpet color=magenta function party:board/spaces/red_space
 execute @s ~ ~ ~ detect ~ ~ ~ carpet color=light_blue function party:board/spaces/blue_space
 execute @s ~ ~ ~ detect ~ ~ ~ carpet color=pink function party:board/spaces/chance_time
